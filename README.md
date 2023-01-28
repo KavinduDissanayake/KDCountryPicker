@@ -60,10 +60,10 @@ dependencies: [
 .sheet(isPresented: $showingModalView) {
 	VStack{
 	//Header
-			CountriesView(selectedCountryModel: selectedCountryModel,getSelectedModel:{ selectedCountry in
-					self.showingModalView.toggle()
-					selectedCountryModel = selectedCountry
-			})
+	      CountriesView(selectedCountryModel: selectedCountryModel,getSelectedModel:{ selectedCountry in
+			self.showingModalView.toggle()
+			selectedCountryModel = selectedCountry
+		})
 	}
 }
 
