@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct CountryModel: Identifiable,Hashable {
+public struct CountryModel: Identifiable,Hashable {
     
-    var id = UUID()
+    public var id = UUID()
     let isoCode: String
     let digitCode: String
     var isSelected: Bool = false
@@ -40,7 +40,7 @@ struct CountryModel: Identifiable,Hashable {
   }
 
 extension CountryModel: Equatable {
-    static func == (lhs: CountryModel, rhs: CountryModel) -> Bool {
+    public static func == (lhs: CountryModel, rhs: CountryModel) -> Bool {
         return lhs.isoCode == rhs.isoCode && lhs.digitCode == rhs.digitCode
     }
 }
