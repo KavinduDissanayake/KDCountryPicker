@@ -10,15 +10,15 @@ import Foundation
 public struct CountryModel: Identifiable,Hashable {
     
     public var id = UUID()
-    let isoCode: String
-    let digitCode: String
-    var isSelected: Bool = false
+    public var isoCode: String
+    public var digitCode: String
+    public var isSelected: Bool = false
 
-    var dialingCode: String? {
+    public var  dialingCode: String? {
         return "+" + digitCode
     }
     
-    var flag: String? {
+    public var  flag: String? {
         let base : UInt32 = 127397
         var flag = ""
         isoCode.unicodeScalars.forEach  { v in
@@ -27,7 +27,7 @@ public struct CountryModel: Identifiable,Hashable {
         return flag
     }
     
-    var country: String? {
+    public var country: String? {
         let locale = Locale(identifier: Locale.preferredLanguages.first!)
         guard let localisedCountryName = locale.localizedString(forRegionCode: isoCode) else {
             let message = "Failed to localised country name for Country Code:- \(isoCode)"
