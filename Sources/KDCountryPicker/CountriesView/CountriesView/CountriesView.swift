@@ -12,7 +12,7 @@ public struct CountriesView: View {
     @ObservedObject var vm = CountriesVM()
     var getSelectedModel : (CountryModel) -> ()
     
-    init(selectedCountryModel: CountryModel? = nil,getSelectedModel: @escaping (CountryModel) -> Void) {
+    public init(selectedCountryModel: CountryModel? = nil,getSelectedModel: @escaping (CountryModel) -> Void) {
         vm  =  CountriesVM(selectedCountryModel: selectedCountryModel)
         self.getSelectedModel = getSelectedModel
     }
