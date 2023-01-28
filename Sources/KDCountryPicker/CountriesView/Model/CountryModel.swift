@@ -14,11 +14,10 @@ public struct CountryModel: Identifiable,Hashable {
     public var digitCode: String
     public var isSelected: Bool = false
 
-    public init(id: UUID = UUID(), isoCode: String, digitCode: String, isSelected: Bool) {
+    public init(id: UUID = UUID(), isoCode: String, digitCode: String) {
         self.id = id
         self.isoCode = isoCode
         self.digitCode = digitCode
-        self.isSelected = isSelected
     }
     
     
