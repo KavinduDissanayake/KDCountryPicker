@@ -13,7 +13,7 @@
 
 ## Requirements
 
-* iOS 12+
+* iOS 13+
 
 * Xcode 12+
 
