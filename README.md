@@ -1,57 +1,35 @@
-
 # KDCountryPicker
 
- 
- Very simple country picker for iOS with elegant design. It uses unicode for country flags. Its allows to automatically scroll  with previous selected one .
- 
-## Promo Image 
 
-## Screenshots
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
+Very simple country picker for iOS with elegant design. It uses unicode for country flags. Its allows to automatically scroll with previous selected one .
 
-  
-
-## Requirements
-
+#### Requirements
 * iOS 13+
 
 * Xcode 12+
 
 * Swift 5.3+
 
-  
-
 ## Installation
-
-  
-
 Currently CountryPicker is only avaliable via SPM. You can also add manually to your project.
 
-  
 
-### SPM
 
-If you have already Swift package set up, add CountryPicker as a dependency to your dependencies in your `Package.swift` file.
+
 
 ```swift
-
 dependencies: [
 
 .package(url: "https://github.com/KavinduDissanayake/KDCountryPicker")
 
 ]
-
 ```
 
-  
-
-  
-
-  
-
-### SwiftUI
-
-```
+Example
+## SwiftUI
+```sh
 @State  var  showingModalView = false
 //inital model you can chanage 
 @State  var selectedCountryModel: CountryModel = CountryModel(isoCode: "LK", digitCode: "94")
@@ -66,6 +44,12 @@ dependencies: [
 		})
 	}
 }
-
-
 ```
+
+
+#### Demo image
+<img align="center" src="https://github.com/KavinduDissanayake/KDCountryPicker/blob/main/Ss/swiftui%20banner.png"> 
+
+## License
+
+Kavindu Dissanayake
